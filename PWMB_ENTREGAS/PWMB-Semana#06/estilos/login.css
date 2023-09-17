@@ -135,3 +135,25 @@ footer a{
     margin-bottom: 10px;
     width: 60;
 }
+button{
+    display: flex;
+    background-color: #FFEFD5;
+    color: #482921;
+    height: 25px;
+    width: 55px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.forms h3{
+    color: #FAE2DD;
+}
+button:hover{
+    background-color: #482921;
+    color: #FFEFD5;
+    height: 35px;
+    width: 65px;
+}

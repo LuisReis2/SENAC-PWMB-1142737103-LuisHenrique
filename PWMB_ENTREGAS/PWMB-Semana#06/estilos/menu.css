@@ -41,8 +41,11 @@ nav{
     height: 50px;
 }
 main{
+    display: flex;
     background-color: #FAE2DD;
     height: 642px;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     background-color: #C25642;
@@ -102,4 +105,25 @@ footer a{
 }
 .opcoes {
     padding: 10px;
+}
+.posts{
+    display: flex;
+    border: solid black;
+    width: 700px;
+    height: 300px;
+    background-color: #C25642 ;
+}
+.perfil{
+    display: flex;
+    background-color: #482921;
+   width: 700px;
+    height: 50px;
+    
+}
+.projetos, .conects{
+    display: flex;
+    border: solid black;
+    width: 200px;
+    height: 500px;
+    
 }
