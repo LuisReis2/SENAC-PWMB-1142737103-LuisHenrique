@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="estilos/inicio.css"/>
-    <title>Inicio</title>
+    <link rel="Stylesheet" href="estilos/login.css"/>
+    <title>Login</title>
 </head>
 <body>
     <header>
@@ -24,13 +25,31 @@
         </div>
         </div>
     </header>
-    <nav>
-        <a href="comoFunciona.html">Como funciona</a>
-        <a href="suporte.html">Suporte</a>
-        <a href="devs.html">Desenvolvedores</a>
-    </nav>
-    <main>
-        <h1>Nossos objetivos de maneira resumida</h1>
+        <nav>
+            <a href="comoFunciona.html">Como funciona</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="devs.html">Desenvolvedores</a>
+        </nav>
+    <main> 
+        <div class="login">
+            <div class="forms">
+        <form>
+            nome :  <input id="email" type="text" name="some_text" >
+            <p>
+             Senha:     <input id="pass" type="text" name="some_text"> 
+            
+            <p>
+           
+            
+            </form>
+            <p>
+                GOOGLE API
+            </p>
+            <button onclick="logando()">Click</button>
+            <p></p>
+            Novo por aqui? <a href="cadastro.html">Cadastre-se</a>
+        </div>
+        </div>
     </main>
     <footer>
         <div class="instabranco">
@@ -43,6 +62,6 @@
          </div>
 
  </footer>
-
+ <script type="text/javascript" src="login.js"></script>
 </body>
 </html>
