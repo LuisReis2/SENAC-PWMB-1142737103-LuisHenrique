@@ -8,3 +8,12 @@ function logando(){
         window.location.assign("menu.html");
     }
 }
+var claro = true
+function darkMode(){
+    claro = !claro
+    if(claro == true){
+        document.getElementById("mainT").style.backgroundColor = "#FFEFD5"
+    }else{
+    document.getElementById("mainT").style.backgroundColor = "black"
+    }
+}
