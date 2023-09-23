@@ -1,8 +1,4 @@
-.container {
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
-}
+
 .container-filho {
     display: flex;
     flex-direction: row;
@@ -16,15 +12,24 @@
     display: flex;
     margin: 0.30em;
 } 
+
 .logo {
-    position: absolute;
-    left: 10px;
+    background-color: red;
+    flex:70%;
+}
+.container {
+      background-color: blue;
+      flex:20%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+}
+.insta {
+    background-color: green;
+    flex:10%;
+    text-align: right;
 }
 
-.insta {
-    position: absolute;
-    right: 10px;
-}
 header{
     background-color: #C25642;
     color: #FFEFD5;
@@ -106,20 +111,46 @@ footer a{
 .opcoes {
     padding: 10px;
 }
-.posts{
+.post{
     display: flex;
-    border: solid black;
+    
     width: 700px;
-    height: 300px;
+    height: 500px;
     background-color: #C25642 ;
     margin-top: 35px;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 15px 15px;
+    flex-direction: column;
+}
+.perfilImg{
+    height: 35px;
+    width: 35px;
+    background-color: green;
+    flex: 10%;
+    border-radius: 100%;
+    margin: 7px;
+}
+.img{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    flex: 90%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: large;
+    text-decoration: none;
+}
+.img a{
+    text-decoration: none;
 }
 .perfil{
-    display: flex;
     background-color: #482921;
     width: 700px;
     height: 50px;
-    justify-content: flex-start;
+    flex: 5%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px 15px;
+    border-top-right-radius: 15px 15px;
 }
 .perfil a{
     color: #FFE3B6;
@@ -164,10 +195,11 @@ footer a{
     color: #482921;
 }
 .left{
-    display: table-column;
-    
+    display: flex;
+    border: solid black;
     width: 200px;
     height: 500px;
+    flex-direction: column;
 }
 .main2{
     display: flex;
@@ -180,4 +212,37 @@ footer a{
 .projectAux{
     
     display: flex;
+}
+
+.mid{
+    border: solid black;
+}
+.descript{
+    border: solid black;
+    flex: 10%;
+    color: #FFE3B6;
+    font-size: large;
+}
+.mostrarProjeto{
+    display: flex;
+    border: solid red;
+    flex: 20%;
+}
+.projectImages{
+    height: 150px;
+    width: 150px;
+}
+.botaoProjeto{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+}
+.pesquisa{
+    border: solid green;
+    width: 700px;
+    height: 150px
 }

@@ -134,6 +134,9 @@ footer a{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 60;
+    height: 25px;
+    background-color: #FFEFD5;
+    border-radius: 20px;
 }
 button{
     display: flex;
@@ -154,6 +157,8 @@ button{
 button:hover{
     background-color: #482921;
     color: #FFEFD5;
-    height: 35px;
-    width: 65px;
+    
+}
+.login a{
+    font-size: larger;
 }
