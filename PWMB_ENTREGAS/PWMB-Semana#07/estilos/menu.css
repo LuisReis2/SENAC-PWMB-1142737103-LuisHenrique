@@ -122,7 +122,6 @@ footer a{
 .perfilImg{
     height: 35px;
     width: 35px;
-    background-color: green;
     flex: 10%;
     border-radius: 100%;
     margin: 7px;
@@ -193,7 +192,6 @@ footer a{
 }
 .left{
     display: flex;
-    border: solid black;
     width: 200px;
     height: 500px;
     flex-direction: column;
@@ -212,17 +210,14 @@ footer a{
 }
 
 .mid{
-    border: solid black;
 }
 .descript{
-    border: solid black;
     flex: 10%;
     color: #FFE3B6;
     font-size: large;
 }
 .mostrarProjeto{
     display: flex;
-    border: solid red;
     flex: 20%;
 }
 .projectImages{
@@ -240,7 +235,6 @@ footer a{
 }
 .pesquisa{
     display: flex;
-    border: solid green;
     width: 500px;
     height: 100px;
     border-radius: 15px;
@@ -266,4 +260,14 @@ footer a{
     padding-left: 10px;
     padding-right: 10px;
     color: #FFE3B6;
+}
+#postagens{
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 550px;
+}
+.delet{
+    height: 35px;
+    width: 35px;
 }
