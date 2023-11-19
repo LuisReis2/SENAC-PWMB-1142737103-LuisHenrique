@@ -45,7 +45,7 @@ nav{
 main{
     display: flex;
     background-color: #F6B3A7;
-    height: 5000px;
+    height: auto;
     justify-content: top;
     align-items: top;
 }
@@ -142,7 +142,7 @@ footer a{
 .perfil{
     background-color: #482921;
     width: 700px;
-    height: 50px;
+    height: 40px;
     flex: 5%;
     display: flex;
     align-items: center;
@@ -216,6 +216,8 @@ footer a{
     flex: 10%;
     color: #FFE3B6;
     font-size: large;
+    margin-bottom: 10px;
+    border-bottom-color: solid #482921;
 }
 .mostrarProjeto{
     display: flex;
@@ -269,6 +271,13 @@ footer a{
     height: 550px;
 }
 .delet{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
+}
+.imgDelete{
+    border: solid black;
+    display: flex;
+    width: 100px;
+    height: 10px;
+    align-items: center;
 }

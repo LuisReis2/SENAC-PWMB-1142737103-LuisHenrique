@@ -82,9 +82,13 @@ function logando(){
 
 // ============Área de postagem================
 
-
+let corpo = document.getElementById("main")
+let tamanho = 0;
 let pessoas = [];
 let id_p = 0;
+let stringposts = localStorage.getItem('Post');
+let posts = JSON.parse(stringposts);
+read();
 function postar() {
     let pessoa = {
         id: id_p
@@ -94,6 +98,7 @@ function postar() {
     pessoas.push(pessoa);
     console.log(pessoas);
     id_p = id_p + 1;
+
     read();
 }
 function lerValores(pessoa) {
@@ -124,6 +129,12 @@ function read() {
         <button class="botaoProjeto"><a href="projetos.html">Ver mais</a></button>
     </div>`*/
     postagem.innerHTML = "";
+    if(pessoas.length > 1){
+        tamanho += 700;
+    }else{
+        tamanho = 700;
+    }
+    
     for (var i = 0; i < pessoas.length; i++) {
         postagem.innerHTML += `<div class="post">
     <div class="perfil">
@@ -147,7 +158,7 @@ function read() {
     </div>
     <button class="botaoProjeto"><a href="projetos.html">Ver mais</a></button>
 </div>`}
-
+corpo.style.height = tamanho + 'px';
 }
 
 function deletar(id){
