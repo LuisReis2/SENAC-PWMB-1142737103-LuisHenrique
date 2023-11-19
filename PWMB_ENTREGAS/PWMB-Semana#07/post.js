@@ -1,11 +1,9 @@
-
 let pessoas = [];
 let id_p = 0;
 function postar() {
     let pessoa = {
         id: id_p
     }
-
     console.log(id_p);
     lerValores(pessoa);
     pessoas.push(pessoa);

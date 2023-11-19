@@ -43,7 +43,9 @@ nav{
 }
 main{
     background-color: #FAE2DD;
-    height: 642px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
 }
 footer{
     background-color: #C25642;
@@ -55,7 +57,7 @@ footer{
 header, nav, main, footer{
     width: 100%;
     padding: 5px 20px;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 header a{
     font-size: 20px;
@@ -103,4 +105,50 @@ footer a{
 }
 .opcoes {
     padding: 10px;
+}
+
+.cadastro{
+    display: table-row;
+    background-color: #E2725B;
+    border-radius: 15px;
+    align-items: center;
+    width: 500px;
+    height: 342px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.button{
+    display: flex;
+    background-color: #FFEFD5;
+    color: #482921;
+    height: 25px;
+    width: 70px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+    background-color: #482921;
+    color: #FFEFD5;
+    
+}
+
+.formulario input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60;
+    height: 25px;
+    background-color: #FFEFD5;
+    border-radius: 20px;
+}
+.title{
+    border: solid black;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    border: solid red;
+    padding-left: 20px;
 }
