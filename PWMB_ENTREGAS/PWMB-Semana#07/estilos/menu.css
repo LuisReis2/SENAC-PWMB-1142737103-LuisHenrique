@@ -45,13 +45,15 @@ nav{
 main{
     display: flex;
     background-color: #F6B3A7;
-    height: 2000px;
+    height: 5000px;
     justify-content: top;
     align-items: top;
 }
 footer{
+    position: relative;
     background-color: #C25642;
     color: #FFE3B6;
+    bottom: 0;
 }
 *{
     margin: 0 auto
@@ -110,9 +112,8 @@ footer a{
 }
 .post{
     display: flex;
-    
     width: 700px;
-    height: 500px;
+    height: 600px;
     background-color: #C25642 ;
     margin-top: 35px;
     border-top-left-radius: 15px 15px;
