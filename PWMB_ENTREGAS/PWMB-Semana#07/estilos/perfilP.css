@@ -104,3 +104,38 @@ footer a{
 .opcoes {
     padding: 10px;
 }
+
+.fotoPerfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border-radius: solid #FFEFD5;
+}
+.perfilP{
+    display: flex;
+    width: 500px;
+    height: 500px;
+    background-color: #482921;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+}
+.labels{
+    background-color: #FAE2DD;
+    width: auto;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.settings{
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.settings:hover{
+    background-color: #351e19;
+}
