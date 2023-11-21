@@ -35,6 +35,7 @@ header{
     margin-left: auto;
     height: 80px;
 }
+
 nav{
     background-color: #FFEFD5;
     display: flex;
@@ -98,22 +99,3 @@ footer a{
     display: flex;
     justify-content: center;
 }
-.instabranco {
-    padding: 10px;
-}
-.opcoes {
-    padding: 10px;
-}
-.func{
-    
-        display: flex;
-        width: auto;
-        height: auto;
-        background-color: #482921;
-        margin-top: 50px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 50px;
-        box-shadow: 0 0 8px 1px black;
-    }
