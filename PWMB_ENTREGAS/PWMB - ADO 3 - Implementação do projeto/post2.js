@@ -1,12 +1,12 @@
 import { count } from "./cadastro.js";
-
+let imagens = document.getElementById("mainImage")
+imagens.innerHTML = `<a href="perfilP.html"><img class="perfilImg" src=${count.imagem} ></a>`
 let corpo = document.getElementById("main")
 let tamanho = 0;
 let pessoas = [];
 let id_p = 0;
 
-let imagens = document.getElementById("mainImage")
-imagens.innerHTML = `<a href="perfilP.html"><img class="perfilImg" src=${count.imagem} ></a>`
+
 pessoas = JSON.parse(localStorage.getItem("posts") || "[]");
 read()
 document.addEventListener('DOMContentLoaded', () => {

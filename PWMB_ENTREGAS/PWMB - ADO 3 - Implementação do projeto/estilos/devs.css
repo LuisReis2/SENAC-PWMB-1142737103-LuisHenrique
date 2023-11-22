@@ -42,8 +42,11 @@ nav{
     height: 50px;
 }
 main{
+    display: flex;
     background-color: #FAE2DD;
-    height: 642px;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
 }
 footer{
     background-color: #C25642;
@@ -103,4 +106,27 @@ footer a{
 }
 .opcoes {
     padding: 10px;
+}
+.func2{
+    display: flex;
+        width: 500px;
+        height: auto;
+        background-color: #482921;
+        margin-top: 50px;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 0 0 8px 1px black;
+        margin: 20px;
+}
+
+h3{
+    margin: 20px;
+    color: #FAE2DD;
+}
+.foto{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
 }

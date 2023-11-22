@@ -44,6 +44,9 @@ nav{
 main{
     background-color: #FAE2DD;
     height: 642px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 footer{
     background-color: #C25642;
@@ -107,13 +110,37 @@ footer a{
 .func{
     
         display: flex;
-        width: auto;
+        width: 700px;
         height: auto;
         background-color: #482921;
         margin-top: 50px;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         flex-direction: column;
-        border-radius: 50px;
+        border-radius: 15px;
         box-shadow: 0 0 8px 1px black;
+        padding: 20px;
     }
+ h3{
+    color: #FAE2DD;
+}
+.func{
+    display: flex;
+        width: 500px;
+        height: auto;
+        background-color: #482921;
+        margin-top: 50px;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 0 0 8px 1px black;
+        padding: 20px;
+}
+h1{
+    margin-top: 20px;
+}
+
+h3{
+    margin-top: 20px;
+}
