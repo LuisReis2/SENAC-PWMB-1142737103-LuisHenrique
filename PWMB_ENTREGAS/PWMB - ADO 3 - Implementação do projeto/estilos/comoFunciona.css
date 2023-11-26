@@ -43,7 +43,7 @@ nav{
 }
 main{
     background-color: #FAE2DD;
-    height: 642px;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -126,7 +126,7 @@ footer a{
 }
 .func{
     display: flex;
-        width: 500px;
+        width: 350px;
         height: auto;
         background-color: #482921;
         margin-top: 50px;
@@ -136,6 +136,7 @@ footer a{
         border-radius: 15px;
         box-shadow: 0 0 8px 1px black;
         padding: 20px;
+        margin-bottom: 10px;
 }
 h1{
     margin-top: 20px;
@@ -143,4 +144,12 @@ h1{
 
 h3{
     margin-top: 20px;
+    text-align: center;
+}
+h3:hover{
+   color: #FAE2DD;
+}
+.func:hover{
+    background-color: #2b1914;
+
 }

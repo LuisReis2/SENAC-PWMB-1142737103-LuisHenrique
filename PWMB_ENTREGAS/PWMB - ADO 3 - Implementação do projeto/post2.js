@@ -2,13 +2,23 @@ import { count } from "./cadastro.js";
 let imagens = document.getElementById("mainImage")
 imagens.innerHTML = `<a href="perfilP.html"><img class="perfilImg" src=${count.imagem} ></a>`
 let corpo = document.getElementById("main")
-let tamanho = 0;
+let tamanho = 700;
 let pessoas = [];
 let id_p = 0;
-
-
 pessoas = JSON.parse(localStorage.getItem("posts") || "[]");
+persiste()
 read()
+
+function persiste(){
+if(!pessoas){
+    
+corpo.style.height = (700 * pessoas.length) + 'px';
+}else{
+    corpo.style.height = tamanho + 'px';
+}
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     let botaoDeletar = document.querySelector('del');
     if (botaoDeletar) {
@@ -37,24 +47,6 @@ function read() {
    
     let postagem = document.getElementById("postagens");
     
-    /*
-        postagem.innerHTML += `<div class="post">
-        <div class="perfil">
-            <a href="perfil.html"> <img class="perfilImg" src="imagens/isaa.jpg"></a>
-            <div class="img">
-                <a href="perfil.html"> Isa Tanisue postou</a>
-            </div>
-        </div>
-        <div class="descript">
-            <p>${pessoas[id_p].legenda}</p>
-        </div>
-        <div class="mostrarProjeto">
-            <img class="projectImages" src="${pessoas[id_p].imagem1}">
-            <img class="projectImages" src="imagens/seta.png">
-            <img class="projectImages" src="${pessoas[id_p].imagem2}">
-        </div>
-        <button class="botaoProjeto"><a href="projetos.html">Ver mais</a></button>
-    </div>`*/
     postagem.innerHTML = "";
     if(pessoas.length > 1){
         tamanho += 700;
@@ -65,7 +57,7 @@ function read() {
     for (var i = 0; i < pessoas.length; i++) {
         postagem.innerHTML += `<div class="post">
     <div class="perfil">
-        <a href="perfilP.html"> <img class="perfilImg" src="${count.imagem}"></a>
+        <a href="perfilP.html"> <img class="perfilImg" src="${count.imagem}" ></a>
         <div class="img">
             <a href="perfilP.html"> ${count.username} postou</a>
         </div>
@@ -79,9 +71,8 @@ function read() {
         <p>${pessoas[i].legenda}</p>
     </div>
     <div class="mostrarProjeto">
-        <img class="projectImages" src="${pessoas[i].imagem1}">
-        <img class="projectImages" src="imagens/seta.png">
-        <img class="projectImages" src="${pessoas[i].imagem2}">
+    <img class="projectImages" src="${pessoas[i].imagem1}" onerror="this.onerror=null;this.src='imagens/erroImagem.webp';">        <img class="projectImages" src="imagens/seta.png">
+    <img class="projectImages" src="${pessoas[i].imagem2}" onerror="this.onerror=null;this.src='imagens/erroImagem.webp';">
     </div>
     <button class="botaoProjeto"><a href="projetos.html">Ver mais</a></button>
 </div>`}

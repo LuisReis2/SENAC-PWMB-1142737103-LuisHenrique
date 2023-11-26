@@ -104,3 +104,35 @@ footer a{
 .opcoes {
     padding: 10px;
 }
+.sup{
+    display: flex;
+    background-color: #E2725B;
+    border-radius: 15px;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.botaoFake{
+    display: flex;
+    background-color: #482921;
+    padding: 10px;
+    color: #FFEFD5;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+.forms{
+    display: table-column;
+    justify-content: center;
+}
+.forms input{
+    margin-top: 0;
+    margin-bottom: 10px;
+    width: 60;
+    height: 25px;
+    background-color: #FFEFD5;
+    border-radius: 20px;
+}
